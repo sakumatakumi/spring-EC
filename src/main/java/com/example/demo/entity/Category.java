@@ -9,8 +9,7 @@ import jakarta.persistence.Table;
 //このクラスが JPA（Java Persistence API）のエンティティであることを示す
 @Entity
 //エンティティがマッピングされるデータベースのテーブル名を指定
-//テーブル名のeとsの間にスペースが入ってしまった。
-@Table(name = "categorie s")
+@Table(name = "categories")
 public class Category {
 	//エンティティの主キー（一意な識別子）となるフィールドを指定
 	@Id
