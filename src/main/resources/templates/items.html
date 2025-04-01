@@ -15,7 +15,7 @@
 		<a th:each="c:${categories}" th:href="@{/items(categoryId=${c.id})}">
 			<span th:text="${c.name}" style="padding-left: 10px;"></span>
 		</a>
-		<a href="/cart">カートを見る</a>
+		<a href="/cart" style="padding-left: 10px;">カートを見る</a>
 	</nav>
 	<main>
 		<table>
@@ -25,6 +25,8 @@
 				<th>値段</th>
 				<th></th>
 			</tr>
+			<!--コントローラーでmodel.addAttribute("items", itemList);を定義しているため、
+				${items}で呼び出せる。その前についているitemは${items}をitemという変数に格納する-->
 			<tr th:each="item:${items}">
 				<td th:text="${item.id}"></td>
 				<td th:text="${item.name}"></td>
@@ -38,7 +40,5 @@
 			</tr>
 		</table>
 	</main>
-	<hr>
-	<footer th:replace="footer"></footer>
 </body>
 </html>

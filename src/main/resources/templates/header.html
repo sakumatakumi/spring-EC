@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html>
+<heder>
+	<h1>
+		<a href="/items">サンプルショッピング</a>
+	</h1>
+	<span th:text="${@account.name}+' さんがログイン中'"></span>
+	<a href="/logout">ログアウト</a>
+</heder>
