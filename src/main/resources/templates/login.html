@@ -2,9 +2,20 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>ログイン</title>
+<link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
-
+	<header>
+		<h1>サンプルショッピング</h1>
+	</header>
+	<main>
+		<span>login</span>
+		<form action="/login" method="post">
+			<span th:text="${message}" style="color: red"></span>
+			<input type="text" name="name" placeholder="名前">
+			<button>ログイン</button>
+		</form>
+	</main>
 </body>
 </html>
