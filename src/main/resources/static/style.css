@@ -1,7 +1,7 @@
 /* 全体 */
 body {
 	background-color: #EFF0F7; /* 背景色  */
-/*	text-align: center;  中央寄せ */
+	text-align: center; /* 中央寄せ */
     min-width: 900px; /* 最小幅 */
 }
 /* ヘッダー、ナビゲーションメニュー、フッター */
