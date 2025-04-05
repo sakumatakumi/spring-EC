@@ -1,6 +1,6 @@
 /* 全体 */
 body {
-	background-color: #EFF0F7; /* 背景色  */
+	background-color: rgb(192, 192, 192); /* 背景色  */
 	text-align: center; /* 中央寄せ */
     min-width: 900px; /* 最小幅 */
 }
@@ -17,8 +17,9 @@ header a, nav a {
 }
 /* ヘッダー内見出し */
 header h1 {
+	text-align: left;
 	font-size: 20pt;
-	margin: 10px auto;
+	margin: 40px 0 40px 30px;
 }
 /* 仕切り線 */
 hr {
@@ -26,7 +27,7 @@ hr {
 }
 /* メイン */
 main {
-	background-color: #FFFFFF;
+	background-color: rgb(192, 192, 192);
 	min-height: 50px;
 	padding: 20px;
 }
@@ -48,14 +49,52 @@ table th {
 /* 送信ボタン */
 button {
 	margin: 2px;
-	padding: 5px 20px;
-	background-color: #e5857b;
+	padding: 1em 0;
+	background-color: #666666;
 	color: #ffffff;
 	border: none;
-	width:150px;
+	width:30%;
 	cursor: pointer;
 }
 /* 送信ボタン(マウスオーバー時) */
 button:hover {
 	background-color: #f1b2b2;
+}
+
+
+/*ログイン画面*/
+h2{
+	margin: 30px 0 0;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.login_box{
+	background-color: #ffffff;
+	border:2px solid ;
+	height: 350px;
+	width: 30%;
+	margin: 30px auto 0;	
+	position: relative;
+}
+
+/*エラーメッサージ*/
+.login_form span{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.login_form input{
+	display: block;
+	margin:100px auto 0;
+	text-align: left;
+	border: 1px solid;
+	width: 50%;
+	padding: 1em;
+}
+
+.login_form button{
+	margin-top: 30px;
 }
