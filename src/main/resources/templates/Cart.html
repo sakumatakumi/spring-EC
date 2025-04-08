@@ -3,15 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Cart</title>
+<link rel="stylesheet" type="text/css" href="/reset.css">
 <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
 	<header th:replace="header"></header>
-	<hr>
 	<main>
+		<div class="cart_text">
+		<p>カート商品</p>
+		</div>
 		<span th:replace="cartItem"></span>
 		<form action="/order">
-			<button>注文する</button>
+			<button class="button">注文する</button>
 		</form>
 	</main>
 </body>
