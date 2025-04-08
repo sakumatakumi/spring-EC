@@ -232,7 +232,7 @@ textarea {
   appearance: none;
   vertical-align: middle;
   color: inherit;
-  font: inherit;
+  font: none;
   background: transparent;
   padding: 0;
   margin: 0;

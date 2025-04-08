@@ -2,65 +2,139 @@
 body {
 	background-color: rgb(192, 192, 192); /* 背景色  */
 	text-align: center; /* 中央寄せ */
-    min-width: 900px; /* 最小幅 */
+    min-width: 900px;  /*最小幅*/ 
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
 }
 /* ヘッダー、ナビゲーションメニュー、フッター */
-header, nav, footer {
-	background-color: #45496a; /* 背景色 */
+header, nav{
+	background-color: #666666; /* 背景色 */
 	color: #ffffff; /* 文字色 */
-	padding-top: 5px; /* 内側余白(上) */
-	padding-bottom: 5px; /* 内側余白(下) */
+	width: 100%;
+	height: 150px;
 }
+
+header{
+	padding:0 30px 0 30px;
+}
+
 /* ヘッダー、ナビゲーション内リンク */
 header a, nav a {
 	color: #ffffff;
+	text-decoration: none;
 }
+
 /* ヘッダー内見出し */
 header h1 {
 	text-align: left;
-	font-size: 20pt;
-	margin: 40px 0 40px 30px;
+	font-size: 2.5em;
 }
+
+/*ログイン前ヘッダー*/
+.login_header{
+	overflow: hidden;
+	background-color: #666666;
+	display: flex;
+	align-items: center;
+}
+
+
+/*ログイン後のヘッダー*/
+.header_service{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.header_user{
+	text-align: right;
+	font-size: 1.6em;
+	height: 100%;
+}
+
+.header_user span{
+	display: block;
+	margin-top: 50px;
+}
+
+.header_logout{
+	text-decoration: underline;
+	display: block;
+	margin-top: 40px;
+}
+
 /* 仕切り線 */
 hr {
-	border-top: 2px dashed #7d8bae;
+	border: 3px solid rgb(192, 192, 192);
 }
+
 /* メイン */
 main {
 	background-color: rgb(192, 192, 192);
 	min-height: 50px;
 	padding: 20px;
 }
+
 /* 表線 */
 table, th, td {
 	border-collapse: collapse;
-	border: 1px solid #7d8bae;
+	border: 2px solid #4e4e4e;
+	background-color: #ffffff;
 }
+
+
 /* 表 */
 table {
     margin: 5px auto;
     min-width: 800px;
+	width: 80%;
 }
+
+th, td{
+	font-size: 1.5em;
+	height: 50px;
+	vertical-align: middle; 
+	text-align: center;
+}
+
+
 /* 表見出しセル */
 table th {
-	background: #7d8bae;
+	background: #666666;
 	color: #ffffff;
 }
+
+
+
 /* 送信ボタン */
 button {
-	margin: 2px;
-	padding: 1em 0;
 	background-color: #666666;
 	color: #ffffff;
 	border: none;
-	width:30%;
 	cursor: pointer;
 }
-/* 送信ボタン(マウスオーバー時) */
-button:hover {
-	background-color: #f1b2b2;
+
+.button{
+	margin: 5px;
+	padding: 0.5em 0;
+	width:10%;
+	font-size: 20px;
 }
 
+.login_button{
+	margin: 5px;
+	padding: 0.5em 0;
+	width:200px;
+	font-size: 20px;
+}
+
+
+/* 送信ボタン(マウスオーバー時) */
+button:hover {
+	background-color: rgb(127, 127, 127);
+}
 
 /*ログイン画面*/
 h2{
@@ -97,4 +171,84 @@ h2{
 
 .login_form button{
 	margin-top: 30px;
+}
+
+
+/*商品一覧ページ*/
+nav{
+	font-size: 1.3em;
+	height: 3em;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+nav a{
+	text-decoration: underline;
+	display: inline-block;
+	margin: 0 0 0 1em;
+}
+
+.nav_category span{
+	margin-right: 1em;
+}
+
+.nav_cart{
+	display: block;
+	margin-right: 1em;
+}
+
+/*商品一覧のテーブルの大きさ分配*/
+.item_form{
+	font-size: 20px;
+	border: 1px solid #fff;
+	height: 100%;
+}
+
+.item_no, .cart_no{
+	width: 5%;
+}
+
+.item_name{
+	width: 72%;
+}
+
+.item_price{
+	width: 10%;
+}
+
+.item_button{
+	display: block;
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+}
+
+/*カート内一覧*/
+.cart_text{
+	font-size: 20px;
+	font-weight: bold;
+	width: 80%;
+	margin: 20px auto;
+	text-align: left;
+}
+
+/*お客様情報入力欄*/
+.customer_table th{
+	width: 20%;
+}
+
+.customer_table input{	
+	text-align: left;
+	font-size: 30px;
+	border: 1px solid #666666;
+	width: 99%;
+	padding: 1px;
+}
+
+
+/*お客様情報確認画面*/
+.customer_information{
+	text-align: left;
+	padding: 0.5em;
 }
