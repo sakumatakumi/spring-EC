@@ -3,18 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <title>CustomerInfo</title>
+<link rel="stylesheet" type="text/css" href="/reset.css">
 <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
 	<header th:replace="header"></header>
 	<hr>
 	<main>
-		<h3>ご注文商品</h3>
+		<div class="cart_text">
+		<p>ご注文商品</p>
+		</div>
 		<span th:replace="cartItem"></span>
 		<hr>
-		<h3>お客様情報を入力してください</h3>
+		<div class="cart_text">
+		<p>お客様情報を入力してください</p>
+		</div>
 		<form action="/order/confirm" method="post">
-			<table>
+			<table class="customer_table">
 				<tr>
 					<th>お名前</th>
 					<td>
@@ -40,7 +45,7 @@
 					</td>
 				</tr>
 			</table>
-			<button>確認画面へ</button>
+			<button class="button">確認画面へ</button>
 		</form>
 	</main>
 </body>
