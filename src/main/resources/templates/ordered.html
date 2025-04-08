@@ -8,14 +8,13 @@
 </head>
 <body>
 	<header th:replace="header"></header>
-	<hr>
-	<main>
+	<main class="main_ordered">
 		<h3>ご注文ありがとうございました。</h3>
-		お客様番号は
+		<p>お客様番号は</p>
 		<h3>
 			<span th:text="${orderNumber}" style="color: red"></span>
 		</h3>
-		になります。
+		<p>になります。</p>
 	</main>
 </body>
 </html>

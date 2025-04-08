@@ -6,7 +6,9 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
+	
 }
+
 /* ヘッダー、ナビゲーションメニュー、フッター */
 header, nav{
 	background-color: #666666; /* 背景色 */
@@ -240,10 +242,10 @@ nav a{
 
 .customer_table input{	
 	text-align: left;
-	font-size: 30px;
+	font-size: 20px;
 	border: 1px solid #666666;
 	width: 99%;
-	padding: 1px;
+	padding: 0.38em;
 }
 
 
@@ -251,4 +253,23 @@ nav a{
 .customer_information{
 	text-align: left;
 	padding: 0.5em;
+}
+
+/*注文完了時画面*/
+.main_ordered{
+	margin: 50px auto;
+	font-size: 20px;
+	width: 80%;
+	padding: 300px 100px;
+	background-color: #ffffff;
+}
+
+.main_ordered h3{
+	margin: 40px 0 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.main_ordered p{
+	margin:30px 0 0;
 }
