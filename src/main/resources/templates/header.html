@@ -1,7 +1,9 @@
-<heder>
-	<h1>
+<header class="header_service">
+	<h1 class="service_titile">
 		<a href="/items">サンプルショッピング</a>
 	</h1>
-	<span th:text="${@account.name}+' さんがログイン中'"></span>
-	<a href="/logout">ログアウト</a>
-</heder>
+	<div class="header_user">
+	<span th:text="'こんにちは、'+${@account.name}+' さん'"></span>
+	<a class="header_logout" href="/logout">ログアウト</a>
+	</div>
+</header>
