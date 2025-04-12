@@ -31,7 +31,6 @@ public class AccountController {
 		if (error.equals("notLoggedIn")) {
 			model.addAttribute("message", "ログインしてください");
 		}
-
 		return "login";
 	}
 
